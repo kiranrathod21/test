@@ -8,7 +8,7 @@ int knapsack(int wt[],int val[], int w, int n){
       if(n==0 || w==0){
           return 0;
       }
-   //knapsack
+   
     //choice diagram
     if(wt[n-1]<=w){
         return max(val[n-1]+knapsack(wt,val,w-wt[n-1],n-1)
